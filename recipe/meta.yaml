@@ -1,6 +1,6 @@
 {% set name = "aiosmtplib" %}
-{% set version = "1.0.3" %}
-{% set sha256 = "296b8c504d0e448ab2a4075ef497dcf69fe02d0c2d3b2f4360219f36e934cd01" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "06461faa01c4f2d9bacb01e88ae5cbc0d62d1f5569be9203086ec20df9358ea2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [py<35]
   script: python -m pip install --no-deps --ignore-installed .
 
