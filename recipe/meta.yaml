@@ -1,6 +1,6 @@
 {% set name = "aiosmtplib" %}
-{% set version = "1.0.5" %}
-{% set sha256 = "a49670819c6764d9a7b2bb4c4a8a381f91423de86b066d3b9fc02f3bed9a1e63" %}
+{% set version = "1.0.6" %}
+{% set sha256 = "1c07ae16b400a73e66325ce2adb258447da444c524a3c3aeb229f5a23f41417f" %}
 
 package:
   name: {{ name|lower }}
