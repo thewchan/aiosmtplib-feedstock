@@ -1,6 +1,6 @@
 {% set name = "aiosmtplib" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "1c07ae16b400a73e66325ce2adb258447da444c524a3c3aeb229f5a23f41417f" %}
+{% set version = "1.1.4" %}
+{% set sha256 = "8270d0a06475aa05b9276fc954fbd08a1f6c59d0452b4899413d8bca1db24541" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -31,8 +31,8 @@ about:
   home: https://github.com/cole/aiosmtplib
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
-  summary: 'Asynchronous SMTP client for use with asyncio.'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  summary: Asynchronous SMTP client for use with asyncio.
 
 extra:
   recipe-maintainers:
