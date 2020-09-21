@@ -31,6 +31,7 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: Asynchronous SMTP client for use with asyncio.
+  doc_url: https://aiosmtplib.readthedocs.io/
   dev_url: https://github.com/cole/aiosmtplib
 
 extra:
