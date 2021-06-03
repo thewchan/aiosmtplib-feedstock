@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - poetry
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -38,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - mcs07
+    - thewchan
